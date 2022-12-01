@@ -43,3 +43,108 @@ if(animal == "cow"){
 else {
     console.log("You're not a cow!");
 }
+// D The Farm
+
+let Age = 14;
+if(Age >= 16){
+    console.log("Here are the keys!");
+}
+else {
+    console.log("Sorry, you're too young.");
+}
+// 1E
+
+for(let i = 0; i<=10; i++){
+    console.log(i);
+}
+// 2A1
+
+for(let i=10; i<=400; i++){
+    console.log(i);
+}
+//2A2
+
+for(let i=12; i<=4000; i*=3){
+    console.log(i);
+}
+
+for(let i=1; i<=100; i++){
+    if(i % 2 == 0){
+        console.log(i + " is an even number");
+    }
+    else{
+        console.log(i);
+    }
+}
+//2B
+
+for(let i=0; i<=100; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log("I found a " + i + ". High five! Also three is a crowd");
+    }
+    else if(i % 5 == 0){
+        console.log("I found a " + i + ". High five!");
+    }
+    else if(i % 3 == 0){
+        console.log("I found a " + i + ". Three is a crowd");
+    }
+    else{
+        console.log(i);
+    }
+}
+//2C - GIve me five
+
+let bank_account = 1+2+3+4+5+6+7+8+9+10;
+console.log(bank_account); //55
+for(i=1; i<=100; i++){
+    bank_account += i;
+}
+bank_account *= 2;
+console.log(bank_account);
+//2D - savings account
+
+/* 3A
+1. What are the things in an array called? Elements
+2. Do Arrays guarantee those things will be in order? No. There isn't any guarantee since the code could be delcared a certain way or other functions could be used to knock it out of order.
+3. What real-life thing could you model with an array? Lists. */
+
+const quotes = ["A", "B", "C"];
+//3B
+
+const randomThings = [1, 10, "Hello", true];
+console.log(randomThings[0]); // Access the first element
+randomThings[2] = "World"; // Change the value of hello to world
+console.log(randomThings); // Check the value to make sure it's updated
+// 3C
+
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+console.log(ourClass[2]); // Access the 3rd element of the array
+ourClass[4] = "Octocat";
+ourClass.push("Cloud City");
+console.log(ourClass);
+//3D
+
+const myArray = [5, 10, 500, 20];
+
+myArray.push("Aegon");
+myArray.push("MyString");
+const index = myArray.indexOf(5);
+if (index > -1) { 
+  myArray.splice(index, 1); 
+}
+myArray.unshift("Bob Marley") // Add Bob Marley to beginning of array
+const index1 = myArray.indexOf("MyString");
+if (index1 > -1) { 
+  myArray.splice(index1, 1); 
+}
+myArray.reverse();
+console.log(myArray);
+// Mutate means that the objects can be moved or reassigned in an array. And yes it was mutated and reversed.
+
+let Num = 104;
+if(Num<100){
+    console.log("Little number");
+}
+else {
+    console.log("Big number");
+}
