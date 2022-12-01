@@ -31,7 +31,7 @@ console.log(true || false);
 console.log(false && false && false && false && false || true);
 console.log(false == false)
 console.log(e == 'Kevin');
-console.log(a < b != c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+console.log(a == -b + c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
 console.log(a != a + d); // note: the answer is a simple arithmetic equation, not something "weird"
 console.log(48 == '48');
 // C Booleans
@@ -211,7 +211,7 @@ printGreeting("SLimer")
 const printCool = (name) => {
     console.log(name + " is cool.");
 }
-printCool("Capatain Reynolds");
+printCool("Captain Reynolds");
 //4B
 
 const calculateCube = (number) => {
@@ -222,7 +222,7 @@ console.log(calculateCube(3));
 // 4C
 
 const isVowel = (letter)=> {
-    if(letter == 'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'){
+    if(letter == 'a'|| letter == 'A' || letter == 'e' || letter == 'E' || letter == 'i' || letter == 'I' || letter ==  'o' || letter == 'O' || letter == 'u' || letter == 'U'){
         return true;
     }
     else 
@@ -230,7 +230,7 @@ const isVowel = (letter)=> {
         return false;
     }
 }
-console.log(isVowel('h'));
+console.log(isVowel('b'));
 // 4D
 
 const getTwoLengths = (Word1, Word2)=>{
@@ -272,10 +272,10 @@ const printLongestWord = (arr) => {
     }
     return word;
   }
-  console.log(printLongestWord(["Abc", "Ab"]));
+  console.log(printLongestWord(["Abc", "Ab", "def"]));
   //4H
 
-let user = {
+let user = { //A
     name: "Mike",
     email: "Mike@gmail.com", 
     age: 26, 
@@ -286,4 +286,47 @@ user.email = "Mike@yahoo.com";
 console.log(user.email); //B1
 
 user.age++;
-console.log(user.age)
+console.log(user.age); //B2
+
+user.location = "Chicago"; //C
+
+user.purchased.push("carbohydrates"); //D1
+user.purchased.push("peace of mind"); //D2
+user.purchased.push("Merino jodhpurs"); //D3
+console.log(user.purchased[2]); //D4
+
+user.friend = { //E1
+    name: "Grace",
+    age: 85,
+    location: "Japan",
+    purchased: []
+}
+console.log(user.friend.name); //E2
+console.log(user.friend.location); //E3
+user.friend.age = 55; //E4
+user.friend.purchased.push("The one Ring", "A latte"); //E5-6
+console.log(user.friend.purchased[1]);//E7
+
+user.purchased.forEach((element) => {
+    console.log(element);
+})
+
+user.friend.purchased.forEach((element) => {
+    console.log(element);
+})
+
+/*
+const updateUser = () => {
+    user.age++;
+    console.log(user.name.toUpperCase());
+}
+updateUser(); */ // G1-3
+
+const oldAndLoud = (person) => {
+    person.age++;
+    console.log(person.name.toUpperCase());
+}
+oldAndLoud(user);
+console.log(user.age);
+
+
