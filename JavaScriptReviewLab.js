@@ -212,3 +212,78 @@ const printCool = (name) => {
     console.log(name + " is cool.");
 }
 printCool("Capatain Reynolds");
+//4B
+
+const calculateCube = (number) => {
+    number = number * number * number;
+    return number;
+}
+console.log(calculateCube(3));
+// 4C
+
+const isVowel = (letter)=> {
+    if(letter == 'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'){
+        return true;
+    }
+    else 
+    {
+        return false;
+    }
+}
+console.log(isVowel('h'));
+// 4D
+
+const getTwoLengths = (Word1, Word2)=>{
+    return console.log("[" + Word1.length + ", " +  Word2.length + "]");
+}
+getTwoLengths("sgg", "a");
+//4E
+
+
+const getMultipleLengths = (arr) => {
+    for(let i = 0; i < arr.length; i++){
+        return console.log(arr[i].length);
+    }
+    }
+console.log(getMultipleLengths["A"]);
+
+//4F COMEBACK
+
+const maxOfThree = (num1, num2, num3) => {
+    if(num1 >= num2 && num1 >= num3){
+        return console.log(num1);
+    }
+    else if(num2 >= num1 && num2 >= num3){
+        return console.log(num2);
+    }
+    else if(num3 >= num1 && num3 >= num2){
+        return console.log(num3);
+    }
+}
+maxOfThree(23,22,10);
+//4G
+
+const printLongestWord = (arr) => {
+    let word = "";
+    for (let i = 0; i < arr.length; i++) {
+      if (word.length < arr[i].length) {
+        word = arr[i];
+      }
+    }
+    return word;
+  }
+  console.log(printLongestWord(["Abc", "Ab"]));
+  //4H
+
+let user = {
+    name: "Mike",
+    email: "Mike@gmail.com", 
+    age: 26, 
+    purchased: []
+}
+
+user.email = "Mike@yahoo.com";
+console.log(user.email); //B1
+
+user.age++;
+console.log(user.age)
