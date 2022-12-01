@@ -148,3 +148,67 @@ if(Num<100){
 else {
     console.log("Big number");
 }
+//3F
+
+let num = 23;
+if(num < 5){
+    console.log("Little number");
+}
+else if(num > 10){
+    console.log("Big number");
+}
+else {
+    console.log("monkey");
+}
+//3G
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+
+kristynsCloset.splice(6, 0, "raybans"); // Add raybans after yellow knit hat
+kristynsCloset[5] = "stained knit hat"; // Changed yellow knit hat to stained
+console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][1] + ", and some " + thomsCloset[2][0]);
+thomsCloset[1][2] = "Footie Pajamas";
+//3H
+
+
+const printGreeting = (name) => {
+    console.log("Hello " + name);
+}
+printGreeting("SLimer")
+//4A
+
+const printCool = (name) => {
+    console.log(name + " is cool.");
+}
+printCool("Capatain Reynolds");
