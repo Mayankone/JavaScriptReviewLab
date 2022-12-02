@@ -1,6 +1,6 @@
 /*
 1. How do we assign a value to a variable? A. With the assignment operator.
-2. How do we change the value of a variable? By changing the value when calling it again.
+2. How do we change the value of a variable? By assigning the new value when redeclaring it again.
 3. How do we assign an existing variable to a new variable? Use the assignment operator("=") to assign the new variable to the existing one. Ex. const var 1 = var 2;
 4. Remind me, what are declare, assign, and define? Assigning means assigning a value to a variable, declaring means calling a function or a statement to perform a code, and defining means giving it a meaning.
 5. What is pseudocoding and why should you do it? It's bascially an informal language that helps programmers write programs. We should do it because it helps with the thought process of figuring out complex code.
@@ -203,7 +203,7 @@ thomsCloset[1][2] = "Footie Pajamas";
 
 
 const printGreeting = (name) => {
-    console.log("Hello " + name);
+    console.log("Hello there " + name);
 }
 printGreeting("SLimer")
 //4A
@@ -239,13 +239,14 @@ const getTwoLengths = (Word1, Word2)=>{
 getTwoLengths("sgg", "a");
 //4E
 
-
-const getMultipleLengths = (arr) => {
-    for(let i = 0; i < arr.length; i++){
-        return console.log(arr[i].length);
+const getMultipleLengths = (arr) => {  
+    let arr2 = [];
+    for(let i = 0; i<arr.length; i++){
+        arr2.push(arr[i].length)
     }
+    return arr2
     }
-console.log(getMultipleLengths["A"]);
+console.log(getMultipleLengths(["Story", "Based in", "Agrabah"]));
 
 //4F COMEBACK
 
