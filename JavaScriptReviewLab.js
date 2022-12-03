@@ -36,21 +36,21 @@ console.log(a != a + d); // note: the answer is a simple arithmetic equation, no
 console.log(48 == '48');
 // C Booleans
 
-let animal = "cow";
+let animal = "cow"; //D1
 if(animal == "cow"){
-    console.log("MOOOOOOOOOOO")
+    console.log("MOOOOOOOOOOO") //D2
 }
 else {
-    console.log("You're not a cow!");
+    console.log("You're not a cow!"); //D3
 }
 // D The Farm
 
-let Age = 14;
+let Age = 14; //E1
 if(Age >= 16){
     console.log("Here are the keys!");
 }
 else {
-    console.log("Sorry, you're too young.");
+    console.log("Sorry, you're too young."); //E2
 }
 // 1E
 
@@ -67,6 +67,7 @@ for(let i=10; i<=400; i++){
 for(let i=12; i<=4000; i*=3){
     console.log(i);
 }
+//2A3
 
 for(let i=1; i<=100; i++){
     if(i % 2 == 0){
@@ -128,7 +129,7 @@ const myArray = [5, 10, 500, 20];
 
 myArray.push("Aegon");
 myArray.push("MyString");
-const index = myArray.indexOf(5);
+const index = myArray.indexOf(5); 
 if (index > -1) { 
   myArray.splice(index, 1); 
 }
@@ -197,6 +198,7 @@ console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
 
 kristynsCloset.splice(6, 0, "raybans"); // Add raybans after yellow knit hat
 kristynsCloset[5] = "stained knit hat"; // Changed yellow knit hat to stained
+console.log(kristynsCloset);
 console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][1] + ", and some " + thomsCloset[2][0]);
 thomsCloset[1][2] = "Footie Pajamas";
 //3H
@@ -230,7 +232,7 @@ const isVowel = (letter)=> {
         return false;
     }
 }
-console.log(isVowel('b'));
+console.log(isVowel('a'));
 // 4D
 
 const getTwoLengths = (Word1, Word2)=>{
