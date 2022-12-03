@@ -238,7 +238,7 @@ console.log(isVowel('a'));
 const getTwoLengths = (Word1, Word2)=>{
     return console.log("[" + Word1.length + ", " +  Word2.length + "]");
 }
-getTwoLengths("sgg", "a");
+getTwoLengths("sgg", "af");
 //4E
 
 const getMultipleLengths = (arr) => {  
